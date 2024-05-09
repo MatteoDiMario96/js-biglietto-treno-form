@@ -5,15 +5,22 @@
 }
 
 header {
-    padding: 3rem;
+    padding: 1rem 3rem;
 }
 
 header > nav {
     display: flex;
-
+    height: 80px;
+    
     justify-content: space-between;
+    align-items: center;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
 ul {
     display: flex;
     list-style-type: none;
@@ -23,11 +30,39 @@ ul li {
     padding: 1rem;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-}
 
 main input {
     margin-right: 1.5rem;
+}
+
+a {
+    color: rgb(0, 139, 208);
+    text-decoration: none;
+}
+
+.no-display {
+    display: none;
+}
+
+#logo-MHA {
+    height:100%;
+}
+
+.blue {
+    background-color: rgb(11, 7, 236);
+}
+
+.light-blue {
+    background-color: rgb(0, 191, 255);
+}
+
+
+@media screen and (max-width:768px){
+    header li {
+        display: none;
+    }
+
+    li.hamburger-menu {
+        display: inline-block;
+    }
 }

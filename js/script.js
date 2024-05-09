@@ -35,8 +35,20 @@ bottoneForm.addEventListener("click", function(){
     const prezzoComplessivo = prezzo - (prezzo / 100 * percentualeSconto)
     console.log(prezzoComplessivo)
 
-    
+
 });
+
+
+//------------HAMBURGER MENU------------
+
+const hamburgerMenu = document.querySelector(".bottone-hamburger-menu");
+
+hamburgerMenu.addEventListener("click", function(){
+    document.querySelector(".header-nav").classList.toggle("blue")
+    document.querySelector("#header").classList.toggle("light-blue")
+
+})
+
 
 
 
