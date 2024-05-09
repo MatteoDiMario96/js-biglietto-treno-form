@@ -10,15 +10,32 @@ va applicato uno sconto del 24.552% per gli under 21
 va applicato uno sconto del 37.893% per gli over 63.
 
 
--Creare una variabile da associare al .value inserito dall'utente nell'imput km percorsi
+-Creo una variabile per selezionare, nel mio file html, il trigger per, "in questo caso",raccogliere dati dall utente.
 
--Creare una variabile da associare al .value inserito dall'utente nell'imput età passeggero
+-Assegno a questa variabile .addEventListener("click"function(){
 
--Creare una variabile prezzo al km 
+    -Creare una variabile da associare al .value inserito dall'utente nell'imput km percorsi
 
--Creare variabile dello sconto 
+    -Creare una variabile da associare al .value inserito dall'utente nell'imput età passeggero
 
--Creare un if e associare lo sconto all'età inserita
+    -Creare una variabile prezzo al km 
+
+    -Creare una variabile percentuale sconto 
+
+    -Creare un if e associare lo sconto all'età inserita
+
+    -Creare variabile dello sconto 
+
+    -Mostrare in console
+    
+})
+
+
+
+
+
+
+
 
 
 
