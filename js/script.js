@@ -30,6 +30,7 @@ bottoneForm.addEventListener("click", function(){
     } else {
         percentualeSconto = 0
     }
+    console.log(percentualeSconto)
 
     // -Creare variabile dello sconto 
     const prezzoComplessivo = prezzo - (prezzo / 100 * percentualeSconto)
@@ -58,6 +59,9 @@ bottoneForm.addEventListener("click", function(){
     const contenutoPrezzoComplessivo = document.createTextNode(prezzoComplessivo.toFixed(2) + " €");
     prezzoComplessivoInHtml.appendChild(contenutoPrezzoComplessivo);
     document.getElementById("Prezzo-Complessivo").append(prezzoComplessivoInHtml)
+
+    
+
 
 });
 
