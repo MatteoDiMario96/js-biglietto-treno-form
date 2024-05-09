@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 header {
@@ -19,6 +20,8 @@ header > nav {
 main {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: 3rem;
 }
 ul {
@@ -38,6 +41,39 @@ main input {
 a {
     color: rgb(0, 139, 208);
     text-decoration: none;
+}
+
+input {
+    border-radius: 20px;
+}
+
+
+div#form {
+    display: flex;
+    align-items: center;
+}
+
+div.form-da-compilare {
+    margin-right: 1.5rem;
+}
+
+.bottone-invio {
+    padding:.4rem .7rem;
+}
+
+.km-fatti,
+.eta-passegero {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+section.info-biglietto > * {
+    margin-bottom: 2rem;
+}
+
+label {
+    margin-bottom: 1rem;
 }
 
 .no-display {

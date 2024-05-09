@@ -35,6 +35,29 @@ bottoneForm.addEventListener("click", function(){
     const prezzoComplessivo = prezzo - (prezzo / 100 * percentualeSconto)
     console.log(prezzoComplessivo)
 
+    // -inserire per comunicare i km inseriti nella variabile kmPercorsi
+    const kmPercorsiInHtml = document.createElement("h4");
+    const contenutoKm = document.createTextNode(kmPercorsi + " km");
+    kmPercorsiInHtml.appendChild(contenutoKm);
+    document.getElementById("km-Percorsi").append(kmPercorsiInHtml)
+
+    // -inserire per comunicare l'età inserita nella variabile età passegero
+    const etaPassegeroInHtml = document.createElement("h4");
+    const contenutoEta = document.createTextNode(etaPassegero + " anni");
+    etaPassegeroInHtml.appendChild(contenutoEta);
+    document.getElementById("eta-Passegero").append(etaPassegeroInHtml)
+
+    // -inserire per comunicare lo sconto di cui hai diritto
+    const scontoInHtml = document.createElement("h4");
+    const contenutoSconto = document.createTextNode(percentualeSconto.toFixed(0) + " %");
+    scontoInHtml.appendChild(contenutoSconto);
+    document.getElementById("sconto").append(scontoInHtml)
+
+    // -inserire per comunicare Il prezzo totale del biglietto
+    const prezzoComplessivoInHtml = document.createElement("h4");
+    const contenutoPrezzoComplessivo = document.createTextNode(prezzoComplessivo.toFixed(2) + " €");
+    prezzoComplessivoInHtml.appendChild(contenutoPrezzoComplessivo);
+    document.getElementById("Prezzo-Complessivo").append(prezzoComplessivoInHtml)
 
 });
 
@@ -46,7 +69,6 @@ const hamburgerMenu = document.querySelector(".bottone-hamburger-menu");
 hamburgerMenu.addEventListener("click", function(){
     document.querySelector(".header-nav").classList.toggle("blue")
     document.querySelector("#header").classList.toggle("light-blue")
-
 })
 
 

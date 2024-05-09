@@ -43,18 +43,46 @@
     <main>
         <section>
             <div id="form">
-                <label for="text">
-                    Quanti km farai?
-                </label>
-                <input type="text" name="km" id="km">
+                <div class="form-da-compilare">
+                    <div class="km-fatti">
+                        <label for="text">
+                            Quanti km farai?
+                        </label>
+                        <input type="text" name="km" id="km">
+                    </div>
+    
+                    <div class="eta-passegero">
+                        <label for="text">
+                            Quanti anni ha il viaggiatore?
+                        </label>
+                        <input type="number" name="number" id="eta">
+                    </div>
+                </div>
 
-                <label for="text">
-                    Quanti anni ha il viaggiatore?
-                </label>
-                <input type="number" name="number" id="eta">
-
-                <input type="button" class="bottone-invio" value="Send">
+                <div class="send">
+                    <input type="button" class="bottone-invio" value="Send">
+                </div>
             </div>
+        </section>
+
+        <section class="info-biglietto">
+            <h3 id="km-Percorsi">
+                I km che ci hai comunicato sono:
+            </h3>
+
+            <h3 id="eta-Passegero">
+                Gli anni che ci hai detto di avere sono:
+            </h3>
+
+            <h2 id="sconto">
+                Questo è lo sconto che ti spetta:
+            </h2>
+
+            <h1 id="Prezzo-Complessivo">
+                Questo è il totale del tuo biglietto già scontato
+            </h1>
+
+
         </section>
     </main>
 
